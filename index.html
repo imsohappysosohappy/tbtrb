@@ -62,7 +62,7 @@ h2{font-size:28px;margin-bottom:18px;}
 .contact-card{background:var(--glass);padding:20px;border-radius:14px;display:flex;gap:16px;align-items:center;border:1px solid rgba(255,255,255,0.05);}
 .contact-card.big{min-height:120px;}
 .contact-icon{width:72px;height:72px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);}
-.icon-svg{width:42px;height:42px;opacity:0.95;}
+.contact-icon img{width:48px;height:48px;object-fit:contain;}
 .contact-title{font-weight:800;}
 .contact-link{color:var(--accent);margin-top:6px;display:block;}
 .discord-user{color:var(--muted);margin-top:6px;}
@@ -89,7 +89,7 @@ h2{font-size:28px;margin-bottom:18px;}
     <h2>Skills</h2>
     <div class="skills-grid">
       <div class="avatar-card">
-        <div class="avatar" style="background-image: url('https://static.wikia.nocookie.net/deathnote/images/8/83/Lawliet-L-Cole.png/revision/latest/smart/width/250/height/250?cb=20170907105910');"></div>
+        <div class="avatar" style="background-image: url('https://static.wikia.nocookie.net/deathnote/images/8/83/Lawliet-L-Cole.png/revision/latest?cb=20170907105910');"></div>
         <div class="name-box">
           <div class="display-name">NiKoLas - Cluster</div>
           <div class="role">Social Engineering · Reverse engineering · Malware analysis</div>
@@ -133,7 +133,7 @@ h2{font-size:28px;margin-bottom:18px;}
     <div class="contact-grid">
       <div class="contact-card big">
         <div class="contact-icon youtube">
-          <svg viewBox="0 0 24 24" class="icon-svg"><path d="M10 15l5-3-5-3z" fill="currentColor"/><path d="M21 7s-.2-1.4-.8-2c-.7-.8-1.5-.8-1.9-.9C15.7 4 12 4 12 4s-3.7 0-6.3.1c-.4 0-1.2 0-1.9.9C3.2 5.6 3 7 3 7S3 8.7 3 10.4v3.2C3 17.3 3.2 19 3.2 19s.2 1.4.8 2c.7.8 1.6.8 2 .9C8.3 22 12 22 12 22s3.7 0 6.3-.1c.4 0 1.2 0 1.9-.9.6-.6.8-2 .8-2s.2-1.7.2-3.4v-3.2C21 8.7 21 7 21 7z"/></svg>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">
         </div>
         <div class="contact-info">
           <div class="contact-title">YouTube</div>
@@ -143,32 +143,8 @@ h2{font-size:28px;margin-bottom:18px;}
 
       <div class="contact-card big">
         <div class="contact-icon guns">
-          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M5 12h14v2H5z" fill="currentColor"/></svg>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Gun_icon.svg" alt="guns.lol">
         </div>
         <div class="contact-info">
           <div class="contact-title">guns.lol</div>
-          <a class="contact-link" href="https://guns.lol/nk_" target="_blank">https://guns.lol/nk_</a>
-        </div>
-      </div>
-
-      <div class="contact-card big">
-        <div class="contact-icon discord">
-          <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" fill="currentColor"/></svg>
-        </div>
-        <div class="contact-info">
-          <div class="contact-title">Discord</div>
-          <div class="discord-user">user: <strong>4_j9</strong></div>
-          <input readonly value="4_j9" onclick="this.select();" style="margin-top:8px;padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit;" />
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  Made by NiKoLas · Cluster
-</footer>
-
-</body>
-</html>
-
+          <a class="contact-link" href="https://guns.lol/nk_" target="_blank">https://guns.lol/nk_</a
