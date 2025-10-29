@@ -1,58 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cluster</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NiKoLas — Cluster</title>
+
+  <!-- USER REQUESTED FAVICON (ملاحظة: هذا لازم يكون رابط مباشر لصورة مثل .png أو .ico.
+       إذا الرابط الذي أعطيتَه ليس مباشرة لصورة، استبدله برابط صورة مباشر). -->
+  <link rel="icon" href="https://www.kindpng.com/picc/m/262-2622967_death-note-png-l-death-note-sticker-transparent.png" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Cluster<span>.exe</span></h1>
-    <nav>
-      <a href="#skills">Skills</a>
-      <a href="#tools">Tools</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <div class="container">
+      <div class="brand">
+        <div class="logo-big">NiKoLas</div>
+        <div class="tagline">Social Engineering, Reverse engineering, Malware analysis</div>
+      </div>
+      <nav class="nav-large">
+        <a href="#skills">Skills</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <div class="skills-content">
-      <img src="https://i.pinimg.com/736x/7d/37/31/7d37310e84a82b99f62a7e9a065dcd6c.jpg" alt="L from Death Note">
-      <div class="info-box">
-        <h3>NiKoLas - Cluster</h3>
-        <p>Social Engineering, Reverse Engineering, Malware Analysis</p>
+  <main class="main">
+    <!-- SKILLS -->
+    <section id="skills" class="panel">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="avatar-card">
+          <!-- ضع هنا رابط الصورة المباشر لأفاتار L من Death Note (مثلاً https://example.com/l.png) -->
+          <div class="avatar" style="background-image: url('https://static.wikia.nocookie.net/deathnote/images/8/83/Lawliet-L-Cole.png/revision/latest/smart/width/250/height/250?cb=20170907105910');" aria-hidden="true"></div>
+
+          <div class="name-box">
+            <div class="display-name">NiKoLas - Cluster</div>
+            <div class="role">Social Engineering · Reverse engineering · Malware analysis</div>
+          </div>
+        </div>
+
+        <div class="languages-card">
+          <h3>Languages</h3>
+          <div class="lang">
+            <div class="lang-label">Python <span>90%</span></div>
+            <div class="bar"><div class="progress p90"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang-label">C++ <span>84%</span></div>
+            <div class="bar"><div class="progress p84"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang-label">C# <span>65%</span></div>
+            <div class="bar"><div class="progress p65"></div></div>
+          </div>
+          <div class="lang">
+            <div class="lang-label">JavaScript <span>53%</span></div>
+            <div class="bar"><div class="progress p53"></div></div>
+          </div>
+        </div>
+
+        <div class="technical-card">
+          <h3>Technical skills</h3>
+          <ul>
+            <li>Social Engineering</li>
+            <li>Reverse Engineering</li>
+            <li>Malware Analysis</li>
+            <li>Programming Languages</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="tools" class="section fade-in">
-    <h2>Tools</h2>
-    <p>Coming soon...</p>
-  </section>
-
-  <section id="contact" class="section fade-in">
-    <h2>Contact</h2>
-    <div class="contact-boxes">
-      <a class="contact-card youtube" href="https://www.youtube.com/@im-nk47" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-        <span>YouTube</span>
-      </a>
-      <a class="contact-card guns" href="https://guns.lol/nk_" target="_blank">
-        <img src="https://guns.lol/favicon.ico" alt="Guns.lol">
-        <span>guns.lol</span>
-      </a>
-      <div class="contact-card discord">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
-        <span>Discord: 4_j9</span>
+    <!-- TOOLS -->
+    <section id="tools" class="panel">
+      <h2 class="section-title">Tools</h2>
+      <p class="tools-note">Stock list — أسماء فقط (لا ملفات فعلية)</p>
+      <div class="tool-list">
+        <div class="tool-card">XWorm</div>
+        <div class="tool-card">Rce Gen</div>
+        <div class="tool-card">Discord Tools</div>
+        <div class="tool-card">Nuker</div>
+        <div class="tool-card">Encrypter</div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>© 2025 Cluster. All rights reserved.</p>
+    <!-- CONTACT -->
+    <section id="contact" class="panel">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card big">
+          <div class="contact-icon youtube" aria-hidden="true">
+            <!-- أيقونة يوتيوب بسيطة (SVG inline) -->
+            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M10 15l5-3-5-3z" fill="currentColor"/><path d="M21 7s-.2-1.4-.8-2c-.7-.8-1.5-.8-1.9-.9C15.7 4 12 4 12 4s-3.7 0-6.3.1c-.4 0-1.2 0-1.9.9C3.2 5.6 3 7 3 7S3 8.7 3 10.4v3.2C3 17.3 3.2 19 3.2 19s.2 1.4.8 2c.7.8 1.6.8 2 .9C8.3 22 12 22 12 22s3.7 0 6.3-.1c.4 0 1.2 0 1.9-.9.6-.6.8-2 .8-2s.2-1.7.2-3.4v-3.2C21 8.7 21 7 21 7z"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-title">YouTube</div>
+            <a class="contact-link" href="https://www.youtube.com/@im-nk47" target="_blank" rel="noopener">https://www.youtube.com/@im-nk47</a>
+          </div>
+        </div>
+
+        <div class="contact-card big">
+          <div class="contact-icon guns" aria-hidden="true">
+            <!-- أيقونة عامة كبديل لشعار guns.lol -->
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M5 12h14v2H5z" fill="currentColor"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-title">guns.lol</div>
+            <a class="contact-link" href="https://guns.lol/nk_" target="_blank" rel="noopener">https://guns.lol/nk_</a>
+          </div>
+        </div>
+
+        <div class="contact-card big">
+          <div class="contact-icon discord" aria-hidden="true">
+            <!-- أيقونة ديسكورد (تبسيط) -->
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" fill="currentColor"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-title">Discord</div>
+            <div class="discord-user">user: <strong>4_j9</strong></div>
+            <button id="copyDiscord" class="btn">نسخ الاسم</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>Made by NiKoLas · Cluster</div>
+      <div class="small-note">ملاحظة: الأدوات مُدرجة كـ stock names فقط.</div>
+    </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
